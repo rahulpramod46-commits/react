@@ -1,0 +1,74 @@
+.buildathon {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 24px;
+}
+
+.buildathon-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.buildathon-header h2 {
+    font-size: 42px;
+    color: #60a5fa;
+}
+
+.buildathon-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 32px;
+    align-items: center;
+
+    padding: 28px;
+
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.buildathon-image img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.buildathon-content h3 {
+    color: #93c5fd;
+    margin-bottom: 16px;
+}
+
+.buildathon-content p {
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+.achievement-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.achievement-item {
+    padding: 14px 16px;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.06);
+    color: #e5e7eb;
+}
+
+@media (max-width: 900px) {
+    .buildathon-card {
+        grid-template-columns: 1fr;
+    }
+
+    .buildathon-header h2 {
+        font-size: 34px;
+    }
+}

@@ -1,0 +1,91 @@
+.education {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 24px;
+}
+
+.education-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.education-header h2 {
+    font-size: 42px;
+    color: #60a5fa;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: linear-gradient(#2563eb, #7c3aed);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 48px;
+    margin-bottom: 36px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 8px;
+
+    width: 26px;
+    height: 26px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.45);
+}
+
+.timeline-content {
+    padding: 24px;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline-year {
+    color: #93c5fd;
+    font-weight: 700;
+}
+
+.timeline-content h3 {
+    color: #e5e7eb;
+    margin-top: 8px;
+}
+
+.timeline-content h4 {
+    color: #60a5fa;
+    margin: 6px 0 14px;
+}
+
+.timeline-content p {
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .education-header h2 {
+        font-size: 34px;
+    }
+}
